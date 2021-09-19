@@ -2,8 +2,8 @@ import styles from '@/styles/Showcase.module.css'
 const ShowCase = () => {
     return (
         <div className={styles.showcase}>
-           <h1>Welcome to the party</h1> 
-           <h2>Find the hottest Dj Events</h2>
+           <h1>Welcome to <span style={{color:'tomato'}}>Anu</span> college</h1> 
+           <h2>Find the latest article</h2>
         </div>
     )
 }

@@ -10,7 +10,7 @@ const Layout = ({title,keywords,description,children}) => {
         <div>
           <Head>
           <title>{title}</title>
-        <meta name="description" content={description} />
+      <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
               </Head> 
               <Header/>
@@ -25,9 +25,9 @@ const Layout = ({title,keywords,description,children}) => {
     )
 }
 Layout.defaultProps={
-    title:"Dj",
-    description:'music event',
-    keywords:'music,dj'
+    title:"Anu college",
+    description:'flight college',
+    keywords:'flight,college,permission'
 }
 
 export default Layout

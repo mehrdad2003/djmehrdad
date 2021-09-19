@@ -56,12 +56,12 @@ export default function AddEventPage({ token }) {
   return (
     <Layout title='Add New Event'>
       <Link href='/events'>Go Back</Link>
-      <h1>Add Event</h1>
+      <h1>Add Article</h1>
       <ToastContainer />
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.grid}>
           <div>
-            <label htmlFor='name'>Event Name</label>
+            <label htmlFor='name'>Article Name</label>
             <input
               type='text'
               id='name'
@@ -71,7 +71,7 @@ export default function AddEventPage({ token }) {
             />
           </div>
           <div>
-            <label htmlFor='performers'>Performers</label>
+            <label htmlFor='performers'>Author</label>
             <input
               type='text'
               name='performers'
@@ -81,7 +81,7 @@ export default function AddEventPage({ token }) {
             />
           </div>
           <div>
-            <label htmlFor='venue'>Venue</label>
+            <label htmlFor='venue'>Key</label>
             <input
               type='text'
               name='venue'
@@ -91,7 +91,7 @@ export default function AddEventPage({ token }) {
             />
           </div>
           <div>
-            <label htmlFor='address'>Address</label>
+            <label htmlFor='address'>About</label>
             <input
               type='text'
               name='address'
@@ -111,7 +111,7 @@ export default function AddEventPage({ token }) {
             />
           </div>
           <div>
-            <label htmlFor='time'>Time</label>
+            <label htmlFor='time'>Time to read</label>
             <input
               type='text'
               name='time'
@@ -123,7 +123,7 @@ export default function AddEventPage({ token }) {
         </div>
 
         <div>
-          <label htmlFor='description'>Event Description</label>
+          <label htmlFor='description'>Article Description</label>
           <textarea
             type='text'
             name='description'
@@ -133,7 +133,7 @@ export default function AddEventPage({ token }) {
           ></textarea>
         </div>
 
-        <input type='submit' value='Add Event' className='btn' />
+        <input type='submit' value='Add Article' className='btn' />
       </form>
     </Layout>
   )

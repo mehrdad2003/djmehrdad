@@ -11,7 +11,8 @@ const EventItem = ({evt}) => {
               </div> 
               <div className={styles.info}>
                   <span>
-                      {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}
+                      {new Date(evt.date).toLocaleDateString('en-US')}{' '} /
+                      <span style={{color:'tomato'}}>need {evt.time} min to read</span>
                   </span>
                   <h3>{evt.name}</h3>
                   </div> 

@@ -8,8 +8,8 @@ export default function EventPage({events,page,total}) {
   return (
     
     <Layout >
-    <h1>Up CommingEvents</h1>
-    {events.length===0&&<h3>No events yet</h3>}
+    <h1>Articles</h1>
+    {events.length===0&&<h3>No article yet</h3>}
     {events.map((evt)=>{
       return<EventItem key={evt.id} evt={evt}/>
     })}

@@ -40,11 +40,11 @@ const LoginPage = () => {
                  
                    <input type='submit' value='login' className='btn'/>
                </form>
-               <p>
+               {/* <p>
                    Do not have an account <Link href='/account/register'>
                    Register Now
                    </Link>
-               </p>
+               </p> */}
            </div>
         </Layout>
     )

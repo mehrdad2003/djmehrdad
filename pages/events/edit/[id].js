@@ -67,12 +67,12 @@ const imageUploaded=async(e)=>{
   return (
     <Layout title='Edit Event'>
       <Link href='/events'>Go Back</Link>
-      <h1>Edit Event</h1>
+      <h1>Edit Article</h1>
       <ToastContainer />
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.grid}>
           <div>
-            <label htmlFor='name'>Event Name</label>
+            <label htmlFor='name'>Article Name</label>
             <input
               type='text'
               id='name'
@@ -82,7 +82,7 @@ const imageUploaded=async(e)=>{
             />
           </div>
           <div>
-            <label htmlFor='performers'>Performers</label>
+            <label htmlFor='performers'>Author</label>
             <input
               type='text'
               name='performers'
@@ -92,7 +92,7 @@ const imageUploaded=async(e)=>{
             />
           </div>
           <div>
-            <label htmlFor='venue'>Venue</label>
+            <label htmlFor='venue'>key</label>
             <input
               type='text'
               name='venue'
@@ -102,7 +102,7 @@ const imageUploaded=async(e)=>{
             />
           </div>
           <div>
-            <label htmlFor='address'>Address</label>
+            <label htmlFor='address'>About</label>
             <input
               type='text'
               name='address'
@@ -122,7 +122,7 @@ const imageUploaded=async(e)=>{
             />
           </div>
           <div>
-            <label htmlFor='time'>Time</label>
+            <label htmlFor='time'>Time to read</label>
             <input
               type='text'
               name='time'
@@ -134,7 +134,7 @@ const imageUploaded=async(e)=>{
         </div>
 
         <div>
-          <label htmlFor='description'>Event Description</label>
+          <label htmlFor='description'>Article Description</label>
           <textarea
             type='text'
             name='description'

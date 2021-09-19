@@ -28,7 +28,7 @@ const DashboardPage = ({events,token}) => {
         <Layout title='User dashboard'>
            <div className={styles.dash}>
              <h1>Dashboard</h1>
-             <h3>MyEvents</h3>
+             <h3>My Articles</h3>
              <ToastContainer/>
              {events.map((evt)=><DashboardEvent evt={evt} key={evt.id} handleDelete={handleDelete}/>)}
            </div>

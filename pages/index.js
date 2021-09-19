@@ -6,14 +6,14 @@ export default function Home({events}) {
  
   return (
     <Layout >
-    <h1>Up CommingEvents</h1>
-    {events.length===0&&<h3>No events yet</h3>}
+    <h1>Latest Articles</h1>
+    {events.length===0&&<h3>No articles yet</h3>}
     {events.map((evt)=>{
       return<EventItem key={evt.id} evt={evt}/>
     })}
     {events.length>0&&(
         <Link href='/events'>
-         <a className='btn-secondary'>View all events</a>
+         <a className='btn-secondary'>View all articles</a>
         </Link>
     )}
     </Layout>

@@ -4,6 +4,7 @@ import styles from '@/styles/Form.module.css'
 const ImageUpload = ({evtId,imageUploaded,token}) => {
     const[image,setImage]=useState(null)
     const handleSubmit=async(e)=>{
+        
         e.preventDefault()
         const formData = new FormData()
         formData.append('files', image)

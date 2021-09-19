@@ -9,28 +9,33 @@ import router, { useRouter } from 'next/router'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 const SingleEvent = ({evt}) => {
-   
+  console.log();
     return (
        <Layout title='eventDetail'>
          <div className={styles.event}>
            
             <span>
-            {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}
+            {new Date(evt.date).toLocaleDateString('en-US')} /<span style={{color:'tomato'}}>
+            need {evt.time}min
+            to read
+            </span>
             </span>
             <h1>{evt.name}</h1>
             <ToastContainer/>
             {evt.image &&(
                 <div className={styles.image}>
-                   <Image src={evt.image.formats.medium.url?evt.image.formats.medium.url:evt.image.formats.medium.thumbnail} width={960} height={600}/>
+                   <Image src={evt.image.formats?evt.image.formats.thumbnail.url:'/images/event-default.png'} width={960} height={300}/>
                 </div>
             )}
-            <h3>Performers:</h3>
-            <p>{evt.performers}</p>
+            <div>Author:  <span style={{color:'red'}}>{evt.performers}</span>
+            {' '}/{' '}key:<span style={{color:'green'}}>{evt.address}</span>
+            </div>
+           
+           
+            
             <h3>Description:</h3>
             <p>{evt.description}</p>
-            <h3>Venue :{evt.venue}</h3>
-            <p>{evt.address}</p>
-            <EventMap evt={evt} />
+            {/* <EventMap evt={evt} /> */}
             <Link href='/events'>
                 <a className={styles.back}>
                     {'<'} Go back
